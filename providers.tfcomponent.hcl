@@ -29,7 +29,7 @@ provider "aws" "configurations" {
   config {
     region = each.value
 
-    assume_role_with_web_identity {
+    assume_role{
       role_arn           = var.role_arn
       web_identity_token = var.identity_token
     }
