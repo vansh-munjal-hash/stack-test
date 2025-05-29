@@ -1,6 +1,6 @@
 provider "aws" "this" {
-    for_each = toset(var.regions)
-    
+    for_each = tvar.regions
+
     config {
         region = each.value
         assume_role_with_web_identity {
