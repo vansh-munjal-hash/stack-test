@@ -31,7 +31,7 @@ provider "aws" "configurations" {
 
     assume_role{
       role_arn           = var.role_arn
-      web_identity_token = var.identity_token
+     // web_identity_token = var.identity_token
     }
 
     default_tags {
